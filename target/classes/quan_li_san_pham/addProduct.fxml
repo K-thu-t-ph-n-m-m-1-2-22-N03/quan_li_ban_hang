@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quan_li_san_pham.AddProductController">
+   <children>
+      <ImageView fx:id="pImage" fitHeight="167.0" fitWidth="190.0" layoutX="31.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="207.0" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="379.0" AnchorPane.topAnchor="26.0" />
+      <Button layoutX="100.0" layoutY="200.0" mnemonicParsing="false" onAction="#uploadHandle" text="Upload" />
+      <Label alignment="CENTER_RIGHT" layoutX="256.0" layoutY="41.0" prefHeight="33.0" prefWidth="105.0" text="Tên sản phẩm: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addName" layoutX="362.0" layoutY="41.0" prefHeight="33.0" prefWidth="149.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="256.0" layoutY="100.0" prefHeight="33.0" prefWidth="105.0" text="Giá: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addPrice" layoutX="362.0" layoutY="100.0" prefHeight="33.0" prefWidth="149.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="256.0" layoutY="159.0" prefHeight="33.0" prefWidth="105.0" text="Số lượng: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addQuantity" layoutX="362.0" layoutY="159.0" prefHeight="33.0" prefWidth="149.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="256.0" layoutY="219.0" prefHeight="33.0" prefWidth="105.0" text="Ghi chú: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addNote" layoutX="362.0" layoutY="219.0" prefHeight="33.0" prefWidth="149.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="256.0" layoutY="278.0" prefHeight="33.0" prefWidth="105.0" text="Hạn sử dụng: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="addDate" layoutX="362.0" layoutY="278.0" prefHeight="33.0" prefWidth="149.0" />
+      <Button layoutX="186.0" layoutY="336.0" mnemonicParsing="false" onAction="#confirmHandle" prefHeight="33.0" prefWidth="70.0" text="Thêm" />
+      <Button layoutX="309.0" layoutY="336.0" mnemonicParsing="false" onAction="#cancelHandle" prefHeight="33.0" prefWidth="70.0" text="Huỷ" />
+   </children>
+</AnchorPane>

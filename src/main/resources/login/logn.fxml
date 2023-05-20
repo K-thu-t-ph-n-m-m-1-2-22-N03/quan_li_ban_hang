@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="334.0" style="-fx-background-color: #ffffff; -fx-border-color: #d5d5d5;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginController">
+    <children>
+        <AnchorPane fx:id="loginT" layoutY="61.0" prefHeight="257.0" prefWidth="334.0" style="-fx-background-color: #ffffff;" visible="false">
+            <children>
+                <TextField fx:id="usernameField" layoutX="23.0" layoutY="47.0" prefHeight="42.0" prefWidth="284.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font></TextField>
+                <Label layoutX="23.0" layoutY="20.0" prefHeight="27.0" prefWidth="126.0" text="Tên người dùng">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="23.0" layoutY="109.0" prefHeight="27.0" prefWidth="126.0" text="Mật khẩu">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="passwordField" layoutX="21.0" layoutY="136.0" prefHeight="42.0" prefWidth="284.0">
+                    <font>
+                        <Font size="13.0" />
+                    </font></PasswordField>
+                <Button layoutX="179.0" layoutY="194.0" mnemonicParsing="false" onAction="#loginHandle" prefHeight="42.0" prefWidth="126.0" style="-fx-text-fill: #ffffff; -fx-background-color: #2171b0;" text="Đăng nhập">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font></Button>
+                <Hyperlink layoutX="23.0" layoutY="198.0" prefHeight="27.0" prefWidth="126.0" text="Bạn quên mật khẩu?" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="1.0" layoutY="12.0" prefHeight="49.0" prefWidth="334.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <Button fx:id="T" layoutX="165.0" layoutY="4.0" mnemonicParsing="false" onAction="#switchLoginT" prefHeight="49.0" prefWidth="169.0" style="-fx-background-color: #26ccca;" text="Đăng nhập thường" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="QR" layoutX="-1.0" layoutY="4.0" mnemonicParsing="false" onAction="#switchLoginQR" prefHeight="49.0" prefWidth="169.0" style="-fx-border-color: #d5d5d5; -fx-background-color: #ffffff; -fx-border-width: 1.2;" text="QR" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="165.0" AnchorPane.topAnchor="0.0">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+      <AnchorPane fx:id="loginQR" layoutX="2.0" layoutY="64.0" prefHeight="266.0" prefWidth="332.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="63.0">
+         <children>
+            <ImageView fitHeight="196.0" fitWidth="247.0" layoutX="67.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/346132758_921183472490124_2413692913370562770_n.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
